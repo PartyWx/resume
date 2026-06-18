@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add a Gig</title>
+    </head>
+    <body>
+        <h1>Add a Gig</h1>
+        <form id="gig-form">
+            <label for="show_name">Show Name</label>
+            <input type="text" id="show_name" name="show_name">
+
+            <label for="working_title">Working Title</label>
+            <input type="text" id="working_title" name="working_title">
+
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="">-- Select --</option>
+                <option value="film">Film</option>
+                <option value="theatre">Theatre</option>
+                <option value="events">Events</option>         
+            </select>
+
+            <label for="subcategory">Sub Category</label>
+            <select id="subcategory" name="subcategory">
+                <option value="">-- Select --</option>
+                <option value="feature">Feature</option>
+                <option value="episodic">Episodic</option>
+                <option value="commercial">Commercial</option>
+                <option value="tour">Tour</option>
+                <option value="sit_down">Sit Down</option>
+                <option value="festival">Festival</option>
+                <option value="corporate">Corporate</option>
+                <option value="awards">Awards</option>
+                <option value="installation">Installation</option>
+            </select>
+
+            <label for="timeframe">Timeframe</label>
+            <input type="text" id="timeframe" name="timeframe">
+
+            <label for="my_role">Your Role</label>
+            <input type="text" id="my_role" name="my_role">
+
+            <label for="director">Director</label>
+            <input type="text" id="director" name="director">
+
+            <label for="dp">DP</label>
+            <input type="text" id="dp" name="dp">
+
+            <label for="gaffer">Gaffer</label>
+            <input type="text" id="gaffer" name="gaffer">
+
+            <label for="rigging_gaffer">Rigging Gaffer</label>
+            <input type="text" id="rigging_gaffer" name="rigging_gaffer">
+
+            <label for="main_unit_programmer">Main Unit Programmer</label>
+            <input type="text" id="main_unit_programmer" name="main_unit_programmer">
+
+            <label for="rigging_programmer">Rigging Programmer</label>
+            <input type="text" id="rigging_programmer" name="rigging_programmer">
+
+            <label for="producer">Producer</label>
+            <input type="text" id="producer" name="producer">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+            
+            <label for="contract">Contract</label>
+            <select id="contract" name="contract">
+                <option value="">-- Select --</option>
+                <option value="iatse">IATSE</option>
+                <option value="pink">Pink</option>
+                <option value="non_union">Non Union</option>
+            </select>
+
+            <label for="vendor">Vendor</label>
+            <input type="text" id="vendor" name="vendor">
+
+            <label for="console">Console</label>
+            <select id="console" name="console">
+                <option value="">-- Select --</option>
+                <option value="grandma2">grandMA2</option>
+                <option value="grandma3">grandMA3</option>
+                <option value="eos">ETC Eos</option>
+            </select>
+
+            <label for="notable_gear">Notable Gear</label>
+            <input type="text" id="notable_gear" name="notable_gear">
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <label>
+                <input type="checkbox" id="featured" name="featured">
+                Featured
+            </label>
+
+            <label>
+                <input type="checkbox" id="display" name="display" checked>
+                Display on Resume
+            </label>
+
+            <label>Resume Version Visibility</label>
+            <div id="resume_versions">
+                <label>
+                    <input type="checkbox" name="resume_versions" value="film">
+                    Film
+                </label>
+                <label>
+                    <input type="checkbox" name="resume_versions" value="theatre">
+                    Theatre
+                </label>
+                <label>
+                    <input type="checkbox" name="resume_versions" value="events">
+                    Events
+                </label>
+            </div>
+            <button type="button" id="submit-btn">Add Gig</button>
+        </form>
+    </body>
+</html>
