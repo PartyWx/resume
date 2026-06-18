@@ -25,15 +25,23 @@
             <label for="subcategory">Sub Category</label>
             <select id="subcategory" name="subcategory">
                 <option value="">-- Select --</option>
-                <option value="feature">Feature</option>
-                <option value="episodic">Episodic</option>
-                <option value="commercial">Commercial</option>
-                <option value="tour">Tour</option>
-                <option value="sit_down">Sit Down</option>
-                <option value="festival">Festival</option>
-                <option value="corporate">Corporate</option>
-                <option value="awards">Awards</option>
-                <option value="installation">Installation</option>
+                <optgroup label="film">
+                    <option value="feature">Feature</option>
+                    <option value="episodic">Episodic</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="documentary">Documentary</option>
+                </optgroup>
+                <optgroup label="theatre">
+                    <option value="tour">Tour</option>
+                    <option value="sit_down">Sit Down</option>
+                </optgroup>
+                <optgroup label="events">
+                    <option value="festival">Festival</option>
+                    <option value="corporate">Corporate</option>
+                    <option value="awards">Awards</option>
+                    <option value="installation">Installation</option>
+                </optgroup>
+                
             </select>
 
             <label for="timeframe">Timeframe</label>
@@ -121,5 +129,6 @@
             </div>
             <button type="button" id="submit-btn">Add Gig</button>
         </form>
+        <script src="admin.js"></script>
     </body>
 </html>
