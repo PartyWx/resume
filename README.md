@@ -3,6 +3,8 @@ Welcome, this is a project in the interest familiarizing myself with git, versio
 
 This was proudly built and coded personally from scratch starting 2024
 
-Thanks for coming
+Thanks for coming!
+
+Wx
 
 Live site: https://partywx.github.io/resume/
