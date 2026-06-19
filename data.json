@@ -24,12 +24,15 @@
             "notable_gear": "Sort of strobe, i think it was elation, big and supposedly waterproof but not by much and shocked you at times",
             "featured": true,
             "display": true,
-            "resume_versions": ["film"],
+            "resume_versions": [
+                "film"
+            ],
             "descriptor": {
                 "film": "Programmed moving lights for practical fire sequences",
                 "theatre": null
-                },
+            },
             "notes": "Shot in Braintree?, Tim Burton very hands on with lighting decisions"
         }
+        
     ]
 }

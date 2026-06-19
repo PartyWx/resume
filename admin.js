@@ -26,5 +26,17 @@ document.getElementById('submit-btn').addEventListener('click',function() {
         display: document.getElementById('display').checked,
         resume_versions: Array.from(document.querySelectorAll('input[name="resume_versions"]:checked')).map(cb => cb.value),
     };
-    console.log(JSON.stringify(gig,null,2));
+fetch('/add-gig', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(gig)
+})
+.then(response => response.json())
+.then(data => {
+    if(data.success) {
+        alert('Gig added successfully!');
+    }
+});
 });

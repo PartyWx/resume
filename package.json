@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Welcome, this is a project in the interest familiarizing myself with git, version control, HTML/CSS as well as updating my resume all in the same.",
+  "main": "admin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PartyWx/resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PartyWx/resume/issues"
+  },
+  "homepage": "https://github.com/PartyWx/resume#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
