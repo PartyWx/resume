@@ -1,7 +1,6 @@
 {
     "experience": [
         {
-            "id": 1,
             "show_name": "Beetlejuice Beetlejuice",
             "working_title": "Blue Hawaii",
             "category": "film",
@@ -12,27 +11,22 @@
             "dp": "Haris Zambarloukos",
             "gaffer": "Franzzzzzzzzy",
             "rigging_gaffer": "Rogeyyyy",
-            "main_unit_programmer": null,
-            "rigging_programmer": null,
+            "main_unit_programmer": "",
+            "rigging_programmer": "",
             "producer": "Warner Bros",
             "city": "Various",
             "state": "MA & VT",
-            "tour_type": null,
-            "contract": "IATSE",
+            "contract": "",
             "vendor": "Red Herring",
-            "console": "grandMA3",
+            "console": "",
             "notable_gear": "Sort of strobe, i think it was elation, big and supposedly waterproof but not by much and shocked you at times",
+            "notes": "Shot in Braintree?, Tim Burton very hands on with lighting decisions",
             "featured": true,
             "display": true,
             "resume_versions": [
                 "film"
             ],
-            "descriptor": {
-                "film": "Programmed moving lights for practical fire sequences",
-                "theatre": null
-            },
-            "notes": "Shot in Braintree?, Tim Burton very hands on with lighting decisions"
+            "id": 1
         }
-        
     ]
 }

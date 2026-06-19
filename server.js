@@ -21,3 +21,28 @@ app.post('/add-gig', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+
+app.get('/gigs', (req, res) => {
+    const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+    res.json(data.experience);
+});
+
+app.put('/update-gig/:id', (req, res) => {
+    const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+    const id = parseInt(req.params.id);
+    const index = data.experience.findIndex(gig => gig.id === id);
+    if (index === -1) {
+        return res.json({ success: false, message: 'Gig not found' });
+    }
+    data.experience[index] = { ...req.body, id: id };
+    fs.writeFileSync('data.json', JSON.stringify(data, null, 4));
+    res.json({ success: true });
+});
+
+app.delete('/delete-gig/:id', (req, res) => {
+    const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+    const id = parseInt(req.params.id);
+    data.experience = data.experience.filter(gig => gig.id !== id);
+    fs.writeFileSync('data.json', JSON.stringify(data, null, 4));
+    res.json({ success: true });
+});
