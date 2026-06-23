@@ -10,6 +10,20 @@
     font-weight: 500;
 }
 
+/* Hidden Rules Start ---- */
+/*  Hides the film job notes */
+.film .jobNote {
+    display: none;
+}
+/*  Hides non featured productions */
+table.hocusPocus2
+,table.mothership
+,table.warriors 
+    {
+    display: none;
+} 
+/* Hidden rules end */
+
 body {
     margin: 2%;
     max-width: 1300px;
@@ -30,8 +44,8 @@ article table {
 
 table {
     width: 100%;
-    padding-left: 3%;
-    padding-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .film,.events table {
@@ -54,7 +68,7 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     font-weight: 600;
 }
 
@@ -87,7 +101,7 @@ p {
 }
 
 .left {
-    width: 30%;
+    width: 25%;
     min-width: 200px;
 }
 
@@ -102,7 +116,7 @@ p {
 }
 
 .right {
-    width: 70%;
+    width: 75%;
     /* background-color: rgba(192, 192, 192, 0.174); */
     background: rgb(236, 189, 81);
     background: linear-gradient(18deg, rgba(236,189,81,0.1) 0%, rgba(194, 193, 191, 0.1) 100%);
@@ -141,7 +155,7 @@ p {
 /* TABLE CSS */
 
 .jobName {
-    width: 65%;
+    width: 70%;
     vertical-align: top;
 }
 
@@ -150,25 +164,29 @@ p {
     vertical-align: text-bottom;
     text-transform: none;
     display: inline-block;
-    margin-left: .5%;
+    margin-left:1%;
 }
 
 .jobTitle, .jobDate {
-    text-align: right;
+    text-align: end;
     vertical-align: top;
 }
 
 .jobDate {
     display:block;
-    margin-top: -2%;
+    margin-top: 3%;
+    text-align: right;
 }
 
 .jobNote {
     font-size: 1em;
-    display: block;
-    width: 125%;
-    padding-left: 4%;
-    margin-top: -1.5%;
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+p.jobNote {
+    text-align: start;
+    margin-right: 0;
 }
 
 .touring h3 {
