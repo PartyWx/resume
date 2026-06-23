@@ -17,6 +17,7 @@ body {
 
 footer {
     text-align: center;
+    clear: both;
 }
 
 article {
@@ -24,7 +25,7 @@ article {
 }
 
 article table {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 table {
@@ -39,7 +40,7 @@ table {
 }
 
 .film table {
-    margin-bottom: 1%;
+    margin-bottom: .5%;
 } 
 
 h1, h2, h3, h4, h5, #top {
@@ -140,7 +141,7 @@ p {
 /* TABLE CSS */
 
 .jobName {
-    width: 60%;
+    width: 65%;
     vertical-align: top;
 }
 
@@ -148,6 +149,8 @@ p {
     font-size: .9em;
     vertical-align: text-bottom;
     text-transform: none;
+    display: inline-block;
+    margin-left: .5%;
 }
 
 .jobTitle, .jobDate {
@@ -161,11 +164,15 @@ p {
 }
 
 .jobNote {
-    font-size: .9em;
+    font-size: 1em;
     display: block;
-    width: 150%;
+    width: 125%;
     padding-left: 4%;
-    margin-top: -2%;
+    margin-top: -1.5%;
+}
+
+.touring h3 {
+    font-size: 1.25em;
 }
 
 .events,.film h2 {
