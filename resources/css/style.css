@@ -1,9 +1,29 @@
 @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 100% !important;
+      float: none !important;
     }
-  }
-  
+
+    .left, .right {
+        width: 100% !important;
+        min-width: unset !important;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #position {
+        font-size: 120%;
+        margin-top: -4%;
+    }
+
+    .skills {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+      
 * {
     margin: 0 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -196,7 +216,7 @@ p.jobNote {
 }
 
 .touring h3 {
-    font-size: 1.25em;
+    font-size: 1.4em;
 }
 
 .events,.film h2 {
